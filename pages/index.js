@@ -58,6 +58,7 @@ const StyledHeader = styled.div`
 function Header() {
     return (
         <StyledHeader>
+
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
@@ -89,7 +90,7 @@ function TimeLine(propriedades) {
                         <div>
                             {videos.map((video) => {
                                 return (
-                                    <a>
+                                    <a href={video.url}>
                                         <img src={video.thumb} />
                                         <span>
                                             {video.title}
