@@ -40,11 +40,14 @@ export default function Search({ valorDoFiltro, setValorDoFiltro }) {
     const valorDaBusca = valorDoFiltro;
     const setValorDaBusca = setValorDoFiltro;
 
+    //const [valorDaBusca, setValorDaBusca] = React.useState("Teste");
     return (
         <StyledSearch>
             <input type="text" onChange={(e) => setValorDaBusca(e.target.value)} value={valorDaBusca} />
+            
             <button>
                 🔎
+                {valorDaBusca}
             </button>
         </StyledSearch>
     )
