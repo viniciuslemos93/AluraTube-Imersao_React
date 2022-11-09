@@ -93,7 +93,8 @@ function TimeLine({searchValue, ...propriedades}) {
                                 const titleNormalized = video.title.toLowerCase(); //Este trecho trata de não diferenciar letrar maiúsculas e minúsculas
                                 const searchValueNormalized = searchValue.toLowerCase();//Este trecho trata de não diferenciar letrar maiúsculas e minúsculas
                                 return titleNormalized.includes(searchValueNormalized)//A função includes() verifica se o que está sendo digitado é igual ao que está procurando.
-                            }).map((video) => {
+                            })
+                            .map((video) => {
                                 return (
                                     <a href={video.url}>
                                         <img src={video.thumb} />
