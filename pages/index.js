@@ -10,7 +10,7 @@ function HomePage() {
         //backgroundColor: "red"
     };
     
-    const [valorDoFiltro, setValorDoFiltro] = React.useState("Angular");
+    const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
     return (
         <>
