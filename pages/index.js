@@ -88,10 +88,10 @@ function TimeLine({searchValue, ...propriedades}) {
 
             {playlistsNames.map((playlistsName) => {
                 const videos = propriedades.playlists[playlistsName];
-                console.log(playlistsName);
-                console.log(videos);
+                //console.log(playlistsName);
+                //console.log(videos);
                 return (
-                    <section>
+                    <section key={playlistsName}>
                         <h2>{playlistsName}</h2>
                         <div>
                             {videos.filter((video) => {
@@ -101,7 +101,7 @@ function TimeLine({searchValue, ...propriedades}) {
                             })
                             .map((video) => {
                                 return (
-                                    <a href={video.url}>
+                                    <a key={video.url} href={video.url}>
                                         <img src={video.thumb} />
                                         <span>
                                             {video.title}
