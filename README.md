@@ -21,7 +21,6 @@ Desenvolvido durante a semana da Imersão React da Alura.
 <hr>
 <h3> Projeto iniciado no dia 07/11/2022 e finalizado no dia 10/11/2022. </h3>
 <hr>
-Deploy: https://alura-tube-imersao-react.vercel.app/
 
 <h1 align="center">Print do Resultado</h1>
 <div align="center">
